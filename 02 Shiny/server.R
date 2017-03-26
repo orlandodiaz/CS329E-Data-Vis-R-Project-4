@@ -1,16 +1,15 @@
 require(dplyr)
 require(ggplot2)
-require("tidyr")
-require("dplyr")
-require("ggplot2")
-require("jsonlite")
-require("RCurl")
-require("grid")
+require(tidyr)
+require(ggplot2)
+require(jsonlite)
+require(RCurl)
+require(grid)
 
 # call in data from data.world
-df <- data.frame(fromJSON(getURL(URLencode(gsub("\n", " ",'oraclerest.cs.utexas.edu:5000/rest/native/?query="select * from pantheria"')),httpheader=c(DB='jdbc:data:world:sql:jlee:s-17-edv-project-3', USER='jlee', PASS=redacted , MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE) ))
+df <- data.frame(fromJSON(getURL(URLencode(gsub("\n", " ",'oraclerest.cs.utexas.edu:5000/rest/native/?query="select * from pantheria"')),httpheader=c(DB='jdbc:data:world:sql:ehjkim:s-17-dv-project-4', USER='ehjkim', PASS=redacted , MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE) ))
 
-# df <- read.csv("https://query.data.world/s/12gav2q7y7l3ustgkagav5rkp",header=T);
+# df <- read.csv("https://query.data.world/s/dqctnno3ugvf2y4grf7v0ftj9",header=T);
 
 server <- function(input, output) {
   output$plot1 <- renderPlot({

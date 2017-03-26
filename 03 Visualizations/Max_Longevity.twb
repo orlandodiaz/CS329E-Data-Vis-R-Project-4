@@ -1,0 +1,2779 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10100.17.0118.2108                               -->
+<workbook source-build='10.1.4 (10100.17.0118.2108)' source-platform='win' version='10.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Pantheria' inline='true' name='federated.147by101q5og5q13p8imr0oa9pr7' version='10.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Pantheria' name='textscan.03inycl1hhnekq0zx5w6e14tw3an'>
+            <connection class='textscan' directory='C:/Users/Franny/Documents/CSVs' filename='Pantheria.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.03inycl1hhnekq0zx5w6e14tw3an' name='Pantheria.csv' table='[Pantheria#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='MSW05_Order' ordinal='0' />
+            <column datatype='string' name='MSW05_Family' ordinal='1' />
+            <column datatype='string' name='MSW05_Genus' ordinal='2' />
+            <column datatype='string' name='MSW05_Species' ordinal='3' />
+            <column datatype='string' name='MSW05_Binomial' ordinal='4' />
+            <column datatype='integer' name='1-1_ActivityCycle' ordinal='5' />
+            <column datatype='real' name='5-1_AdultBodyMass_g' ordinal='6' />
+            <column datatype='real' name='8-1_AdultForearmLen_mm' ordinal='7' />
+            <column datatype='real' name='13-1_AdultHeadBodyLen_mm' ordinal='8' />
+            <column datatype='real' name='2-1_AgeatEyeOpening_d' ordinal='9' />
+            <column datatype='real' name='3-1_AgeatFirstBirth_d' ordinal='10' />
+            <column datatype='real' name='18-1_BasalMetRate_mLO2hr' ordinal='11' />
+            <column datatype='real' name='5-2_BasalMetRateMass_g' ordinal='12' />
+            <column datatype='integer' name='6-1_DietBreadth' ordinal='13' />
+            <column datatype='real' name='7-1_DispersalAge_d' ordinal='14' />
+            <column datatype='real' name='9-1_GestationLen_d' ordinal='15' />
+            <column datatype='integer' name='12-1_HabitatBreadth' ordinal='16' />
+            <column datatype='real' name='22-1_HomeRange_km2' ordinal='17' />
+            <column datatype='real' name='22-2_HomeRange_Indiv_km2' ordinal='18' />
+            <column datatype='real' name='14-1_InterbirthInterval_d' ordinal='19' />
+            <column datatype='real' name='15-1_LitterSize' ordinal='20' />
+            <column datatype='real' name='16-1_LittersPerYear' ordinal='21' />
+            <column datatype='real' name='17-1_MaxLongevity_m' ordinal='22' />
+            <column datatype='real' name='5-3_NeonateBodyMass_g' ordinal='23' />
+            <column datatype='real' name='13-2_NeonateHeadBodyLen_mm' ordinal='24' />
+            <column datatype='real' name='21-1_PopulationDensity_n/km2' ordinal='25' />
+            <column datatype='real' name='10-1_PopulationGrpSize' ordinal='26' />
+            <column datatype='real' name='23-1_SexualMaturityAge_d' ordinal='27' />
+            <column datatype='real' name='10-2_SocialGrpSize' ordinal='28' />
+            <column datatype='integer' name='24-1_TeatNumber' ordinal='29' />
+            <column datatype='integer' name='12-2_Terrestriality' ordinal='30' />
+            <column datatype='integer' name='6-2_TrophicLevel' ordinal='31' />
+            <column datatype='real' name='25-1_WeaningAge_d' ordinal='32' />
+            <column datatype='real' name='5-4_WeaningBodyMass_g' ordinal='33' />
+            <column datatype='real' name='13-3_WeaningHeadBodyLen_mm' ordinal='34' />
+            <column datatype='string' name='References' ordinal='35' />
+            <column datatype='real' name='5-5_AdultBodyMass_g_EXT' ordinal='36' />
+            <column datatype='real' name='16-2_LittersPerYear_EXT' ordinal='37' />
+            <column datatype='real' name='5-6_NeonateBodyMass_g_EXT' ordinal='38' />
+            <column datatype='real' name='5-7_WeaningBodyMass_g_EXT' ordinal='39' />
+            <column datatype='real' name='26-1_GR_Area_km2' ordinal='40' />
+            <column datatype='real' name='26-2_GR_MaxLat_dd' ordinal='41' />
+            <column datatype='real' name='26-3_GR_MinLat_dd' ordinal='42' />
+            <column datatype='real' name='26-4_GR_MidRangeLat_dd' ordinal='43' />
+            <column datatype='real' name='26-5_GR_MaxLong_dd' ordinal='44' />
+            <column datatype='real' name='26-6_GR_MinLong_dd' ordinal='45' />
+            <column datatype='real' name='26-7_GR_MidRangeLong_dd' ordinal='46' />
+            <column datatype='integer' name='27-1_HuPopDen_Min_n/km2' ordinal='47' />
+            <column datatype='real' name='27-2_HuPopDen_Mean_n/km2' ordinal='48' />
+            <column datatype='real' name='27-3_HuPopDen_5p_n/km2' ordinal='49' />
+            <column datatype='real' name='27-4_HuPopDen_Change' ordinal='50' />
+            <column datatype='real' name='28-1_Precip_Mean_mm' ordinal='51' />
+            <column datatype='real' name='28-2_Temp_Mean_01degC' ordinal='52' />
+            <column datatype='real' name='30-1_AET_Mean_mm' ordinal='53' />
+            <column datatype='real' name='30-2_PET_Mean_mm' ordinal='54' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>MSW05_Order</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MSW05_Order]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>MSW05_Order</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSW05_Family</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MSW05_Family]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>MSW05_Family</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSW05_Genus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MSW05_Genus]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>MSW05_Genus</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSW05_Species</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MSW05_Species]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>MSW05_Species</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MSW05_Binomial</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MSW05_Binomial]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>MSW05_Binomial</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1-1_ActivityCycle</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1-1_ActivityCycle]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>1-1_ActivityCycle</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>5-1_AdultBodyMass_g</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[5-1_AdultBodyMass_g]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>5-1_AdultBodyMass_g</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>8-1_AdultForearmLen_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[8-1_AdultForearmLen_mm]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>8-1_AdultForearmLen_mm</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>13-1_AdultHeadBodyLen_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[13-1_AdultHeadBodyLen_mm]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>13-1_AdultHeadBodyLen_mm</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2-1_AgeatEyeOpening_d</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2-1_AgeatEyeOpening_d]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>2-1_AgeatEyeOpening_d</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3-1_AgeatFirstBirth_d</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[3-1_AgeatFirstBirth_d]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>3-1_AgeatFirstBirth_d</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>18-1_BasalMetRate_mLO2hr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[18-1_BasalMetRate_mLO2hr]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>18-1_BasalMetRate_mLO2hr</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>5-2_BasalMetRateMass_g</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[5-2_BasalMetRateMass_g]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>5-2_BasalMetRateMass_g</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6-1_DietBreadth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[6-1_DietBreadth]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>6-1_DietBreadth</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>7-1_DispersalAge_d</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[7-1_DispersalAge_d]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>7-1_DispersalAge_d</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>9-1_GestationLen_d</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[9-1_GestationLen_d]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>9-1_GestationLen_d</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>12-1_HabitatBreadth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[12-1_HabitatBreadth]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>12-1_HabitatBreadth</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>22-1_HomeRange_km2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[22-1_HomeRange_km2]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>22-1_HomeRange_km2</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>22-2_HomeRange_Indiv_km2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[22-2_HomeRange_Indiv_km2]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>22-2_HomeRange_Indiv_km2</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>14-1_InterbirthInterval_d</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[14-1_InterbirthInterval_d]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>14-1_InterbirthInterval_d</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>15-1_LitterSize</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[15-1_LitterSize]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>15-1_LitterSize</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>16-1_LittersPerYear</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[16-1_LittersPerYear]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>16-1_LittersPerYear</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>17-1_MaxLongevity_m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[17-1_MaxLongevity_m]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>17-1_MaxLongevity_m</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>5-3_NeonateBodyMass_g</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[5-3_NeonateBodyMass_g]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>5-3_NeonateBodyMass_g</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>13-2_NeonateHeadBodyLen_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[13-2_NeonateHeadBodyLen_mm]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>13-2_NeonateHeadBodyLen_mm</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>21-1_PopulationDensity_n/km2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[21-1_PopulationDensity_n/km2]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>21-1_PopulationDensity_n/km2</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>10-1_PopulationGrpSize</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[10-1_PopulationGrpSize]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>10-1_PopulationGrpSize</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>23-1_SexualMaturityAge_d</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[23-1_SexualMaturityAge_d]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>23-1_SexualMaturityAge_d</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>10-2_SocialGrpSize</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[10-2_SocialGrpSize]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>10-2_SocialGrpSize</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>24-1_TeatNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[24-1_TeatNumber]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>24-1_TeatNumber</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>12-2_Terrestriality</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[12-2_Terrestriality]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>12-2_Terrestriality</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6-2_TrophicLevel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[6-2_TrophicLevel]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>6-2_TrophicLevel</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>25-1_WeaningAge_d</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[25-1_WeaningAge_d]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>25-1_WeaningAge_d</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>5-4_WeaningBodyMass_g</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[5-4_WeaningBodyMass_g]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>5-4_WeaningBodyMass_g</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>13-3_WeaningHeadBodyLen_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[13-3_WeaningHeadBodyLen_mm]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>13-3_WeaningHeadBodyLen_mm</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>References</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[References]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>References</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>5-5_AdultBodyMass_g_EXT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[5-5_AdultBodyMass_g_EXT]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>5-5_AdultBodyMass_g_EXT</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>16-2_LittersPerYear_EXT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[16-2_LittersPerYear_EXT]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>16-2_LittersPerYear_EXT</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>5-6_NeonateBodyMass_g_EXT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[5-6_NeonateBodyMass_g_EXT]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>5-6_NeonateBodyMass_g_EXT</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>5-7_WeaningBodyMass_g_EXT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[5-7_WeaningBodyMass_g_EXT]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>5-7_WeaningBodyMass_g_EXT</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>26-1_GR_Area_km2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[26-1_GR_Area_km2]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>26-1_GR_Area_km2</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>26-2_GR_MaxLat_dd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[26-2_GR_MaxLat_dd]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>26-2_GR_MaxLat_dd</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>26-3_GR_MinLat_dd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[26-3_GR_MinLat_dd]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>26-3_GR_MinLat_dd</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>26-4_GR_MidRangeLat_dd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[26-4_GR_MidRangeLat_dd]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>26-4_GR_MidRangeLat_dd</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>26-5_GR_MaxLong_dd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[26-5_GR_MaxLong_dd]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>26-5_GR_MaxLong_dd</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>26-6_GR_MinLong_dd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[26-6_GR_MinLong_dd]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>26-6_GR_MinLong_dd</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>26-7_GR_MidRangeLong_dd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[26-7_GR_MidRangeLong_dd]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>26-7_GR_MidRangeLong_dd</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>27-1_HuPopDen_Min_n/km2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[27-1_HuPopDen_Min_n/km2]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>27-1_HuPopDen_Min_n/km2</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>27-2_HuPopDen_Mean_n/km2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[27-2_HuPopDen_Mean_n/km2]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>27-2_HuPopDen_Mean_n/km2</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>27-3_HuPopDen_5p_n/km2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[27-3_HuPopDen_5p_n/km2]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>27-3_HuPopDen_5p_n/km2</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>27-4_HuPopDen_Change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[27-4_HuPopDen_Change]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>27-4_HuPopDen_Change</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>28-1_Precip_Mean_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[28-1_Precip_Mean_mm]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>28-1_Precip_Mean_mm</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>28-2_Temp_Mean_01degC</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[28-2_Temp_Mean_01degC]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>28-2_Temp_Mean_01degC</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>30-1_AET_Mean_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[30-1_AET_Mean_mm]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>30-1_AET_Mean_mm</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>30-2_PET_Mean_mm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[30-2_PET_Mean_mm]</local-name>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias>30-2_PET_Mean_mm</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Pantheria.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='1-1 ActivityCycle' datatype='integer' name='[1-1_ActivityCycle]' role='measure' type='quantitative' />
+      <column caption='10-1 PopulationGrpSize' datatype='real' name='[10-1_PopulationGrpSize]' role='measure' type='quantitative' />
+      <column caption='10-2 SocialGrpSize' datatype='real' name='[10-2_SocialGrpSize]' role='measure' type='quantitative' />
+      <column caption='12-1 HabitatBreadth' datatype='integer' name='[12-1_HabitatBreadth]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[12-2 Terrestriality (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[12-2_Terrestriality]' peg='0' size='0.532' />
+      </column>
+      <column caption='12-2 Terrestriality' datatype='integer' name='[12-2_Terrestriality]' role='measure' type='quantitative' />
+      <column caption='13-1 AdultHeadBodyLen mm' datatype='real' name='[13-1_AdultHeadBodyLen_mm]' role='measure' type='quantitative' />
+      <column caption='13-2 NeonateHeadBodyLen mm' datatype='real' name='[13-2_NeonateHeadBodyLen_mm]' role='measure' type='quantitative' />
+      <column caption='13-3 WeaningHeadBodyLen mm' datatype='real' name='[13-3_WeaningHeadBodyLen_mm]' role='measure' type='quantitative' />
+      <column caption='14-1 InterbirthInterval d' datatype='real' name='[14-1_InterbirthInterval_d]' role='measure' type='quantitative' />
+      <column caption='15-1 LitterSize' datatype='real' name='[15-1_LitterSize]' role='measure' type='quantitative' />
+      <column caption='16-1 LittersPerYear' datatype='real' name='[16-1_LittersPerYear]' role='dimension' type='quantitative' />
+      <column caption='16-2 LittersPerYear EXT' datatype='real' name='[16-2_LittersPerYear_EXT]' role='measure' type='quantitative' />
+      <column caption='MaxLongevity' datatype='real' name='[17-1_MaxLongevity_m]' role='measure' type='quantitative' />
+      <column caption='18-1 BasalMetRate mLO2hr' datatype='real' name='[18-1_BasalMetRate_mLO2hr]' role='measure' type='quantitative' />
+      <column caption='2-1 AgeatEyeOpening d' datatype='real' name='[2-1_AgeatEyeOpening_d]' role='measure' type='quantitative' />
+      <column caption='21-1 PopulationDensity n/km2' datatype='real' name='[21-1_PopulationDensity_n/km2]' role='measure' type='quantitative' />
+      <column caption='22-1 HomeRange km2' datatype='real' name='[22-1_HomeRange_km2]' role='measure' type='quantitative' />
+      <column caption='22-2 HomeRange Indiv km2' datatype='real' name='[22-2_HomeRange_Indiv_km2]' role='measure' type='quantitative' />
+      <column caption='23-1 SexualMaturityAge d' datatype='real' name='[23-1_SexualMaturityAge_d]' role='measure' type='quantitative' />
+      <column caption='24-1 TeatNumber' datatype='integer' name='[24-1_TeatNumber]' role='dimension' type='ordinal' />
+      <column caption='25-1 WeaningAge d' datatype='real' name='[25-1_WeaningAge_d]' role='measure' type='quantitative' />
+      <column caption='26-1 GR Area km2' datatype='real' name='[26-1_GR_Area_km2]' role='measure' type='quantitative' />
+      <column caption='26-2 GR MaxLat dd' datatype='real' name='[26-2_GR_MaxLat_dd]' role='measure' type='quantitative' />
+      <column caption='26-3 GR MinLat dd' datatype='real' name='[26-3_GR_MinLat_dd]' role='measure' type='quantitative' />
+      <column caption='26-4 GR MidRangeLat dd' datatype='real' name='[26-4_GR_MidRangeLat_dd]' role='measure' type='quantitative' />
+      <column caption='26-5 GR MaxLong dd' datatype='real' name='[26-5_GR_MaxLong_dd]' role='measure' type='quantitative' />
+      <column caption='26-6 GR MinLong dd' datatype='real' name='[26-6_GR_MinLong_dd]' role='measure' type='quantitative' />
+      <column caption='26-7 GR MidRangeLong dd' datatype='real' name='[26-7_GR_MidRangeLong_dd]' role='measure' type='quantitative' />
+      <column caption='27-1 HuPopDen Min n/km2' datatype='integer' name='[27-1_HuPopDen_Min_n/km2]' role='measure' type='quantitative' />
+      <column caption='27-2 HuPopDen Mean n/km2' datatype='real' name='[27-2_HuPopDen_Mean_n/km2]' role='measure' type='quantitative' />
+      <column caption='27-3 HuPopDen 5p n/km2' datatype='real' name='[27-3_HuPopDen_5p_n/km2]' role='measure' type='quantitative' />
+      <column caption='27-4 HuPopDen Change' datatype='real' name='[27-4_HuPopDen_Change]' role='measure' type='quantitative' />
+      <column caption='28-1 Precip Mean mm' datatype='real' name='[28-1_Precip_Mean_mm]' role='measure' type='quantitative' />
+      <column caption='28-2 Temp Mean 01degC' datatype='real' name='[28-2_Temp_Mean_01degC]' role='measure' type='quantitative' />
+      <column caption='3-1 AgeatFirstBirth d' datatype='real' name='[3-1_AgeatFirstBirth_d]' role='measure' type='quantitative' />
+      <column caption='30-1 AET Mean mm' datatype='real' name='[30-1_AET_Mean_mm]' role='measure' type='quantitative' />
+      <column caption='30-2 PET Mean mm' datatype='real' name='[30-2_PET_Mean_mm]' role='measure' type='quantitative' />
+      <column caption='5-1 AdultBodyMass g' datatype='real' name='[5-1_AdultBodyMass_g]' role='measure' type='quantitative' />
+      <column caption='5-2 BasalMetRateMass g' datatype='real' name='[5-2_BasalMetRateMass_g]' role='measure' type='quantitative' />
+      <column caption='5-3 NeonateBodyMass g' datatype='real' name='[5-3_NeonateBodyMass_g]' role='measure' type='quantitative' />
+      <column caption='5-4 WeaningBodyMass g' datatype='real' name='[5-4_WeaningBodyMass_g]' role='measure' type='quantitative' />
+      <column caption='5-5 AdultBodyMass g EXT' datatype='real' name='[5-5_AdultBodyMass_g_EXT]' role='measure' type='quantitative' />
+      <column caption='5-6 NeonateBodyMass g EXT' datatype='real' name='[5-6_NeonateBodyMass_g_EXT]' role='measure' type='quantitative' />
+      <column caption='5-7 WeaningBodyMass g EXT' datatype='real' name='[5-7_WeaningBodyMass_g_EXT]' role='measure' type='quantitative' />
+      <column caption='6-1 DietBreadth' datatype='integer' name='[6-1_DietBreadth]' role='measure' type='quantitative' />
+      <column caption='6-2 TrophicLevel' datatype='integer' name='[6-2_TrophicLevel]' role='measure' type='quantitative' />
+      <column caption='7-1 DispersalAge d' datatype='real' name='[7-1_DispersalAge_d]' role='measure' type='quantitative' />
+      <column caption='8-1 AdultForearmLen mm' datatype='real' name='[8-1_AdultForearmLen_mm]' role='measure' type='quantitative' />
+      <column caption='9-1 GestationLen d' datatype='real' name='[9-1_GestationLen_d]' role='measure' type='quantitative' />
+      <column caption='MSW05 Binomial' datatype='string' name='[MSW05_Binomial]' role='dimension' type='nominal' />
+      <column caption='Family' datatype='string' name='[MSW05_Family]' role='dimension' type='nominal' />
+      <column caption='Genus' datatype='string' name='[MSW05_Genus]' role='dimension' type='nominal' />
+      <column caption='Order' datatype='string' name='[MSW05_Order]' role='dimension' type='nominal' />
+      <column caption='Species' datatype='string' name='[MSW05_Species]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[MSW05_Order]' derivation='None' name='[none:MSW05_Order:nk]' pivot='key' type='nominal' />
+      <column-instance column='[MSW05_Species]' derivation='None' name='[none:MSW05_Species:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Family,Order)' hidden='true' name='[Action (Family,Order)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[MSW05_Family]' />
+          <groupfilter function='level-members' level='[MSW05_Order]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.472561' measure-ordering='alphabetic' measure-percentage='0.527439' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:MSW05_Order:nk]' palette='cyclic_10_0' type='palette'>
+            <map to='#1ba3c6'>
+              <bucket>&quot;Afrosoricida&quot;</bucket>
+            </map>
+            <map to='#24ab77'>
+              <bucket>&quot;Cingulata&quot;</bucket>
+            </map>
+            <map to='#25b392'>
+              <bucket>&quot;Chiroptera&quot;</bucket>
+            </map>
+            <map to='#27afc2'>
+              <bucket>&quot;Artiodactyla&quot;</bucket>
+            </map>
+            <map to='#30bbab'>
+              <bucket>&quot;Cetacea&quot;</bucket>
+            </map>
+            <map to='#33bcbe'>
+              <bucket>&quot;Carnivora&quot;</bucket>
+            </map>
+            <map to='#34a559'>
+              <bucket>&quot;Dasyuromorphia&quot;</bucket>
+            </map>
+            <map to='#459f3b'>
+              <bucket>&quot;Dermoptera&quot;</bucket>
+            </map>
+            <map to='#4f7cba'>
+              <bucket>&quot;Tubulidentata&quot;</bucket>
+            </map>
+            <map to='#6a76be'>
+              <bucket>&quot;Soricomorpha&quot;</bucket>
+            </map>
+            <map to='#78ab30'>
+              <bucket>&quot;Didelphimorphia&quot;</bucket>
+            </map>
+            <map to='#8670c2'>
+              <bucket>&quot;Sirenia&quot;</bucket>
+            </map>
+            <map to='#a46dc2'>
+              <bucket>&quot;Scandentia&quot;</bucket>
+            </map>
+            <map to='#abb825'>
+              <bucket>&quot;Diprotodontia&quot;</bucket>
+            </map>
+            <map to='#c26abf'>
+              <bucket>&quot;Rodentia&quot;</bucket>
+            </map>
+            <map to='#cdbb21'>
+              <bucket>&quot;Erinaceomorpha&quot;</bucket>
+            </map>
+            <map to='#db6bbb'>
+              <bucket>&quot;Proboscidea&quot;</bucket>
+            </map>
+            <map to='#e23b25'>
+              <bucket>&quot;Notoryctemorphia&quot;</bucket>
+            </map>
+            <map to='#e53338'>
+              <bucket>&quot;Paucituberculata&quot;</bucket>
+            </map>
+            <map to='#e6ba21'>
+              <bucket>&quot;Hyracoidea&quot;</bucket>
+            </map>
+            <map to='#ec73b2'>
+              <bucket>&quot;Primates&quot;</bucket>
+            </map>
+            <map to='#ed5e1c'>
+              <bucket>&quot;Monotremata&quot;</bucket>
+            </map>
+            <map to='#ee3852'>
+              <bucket>&quot;Peramelemorphia&quot;</bucket>
+            </map>
+            <map to='#f5456d'>
+              <bucket>&quot;Perissodactyla&quot;</bucket>
+            </map>
+            <map to='#f88113'>
+              <bucket>&quot;Microbiotheria&quot;</bucket>
+            </map>
+            <map to='#f89919'>
+              <bucket>&quot;Macroscelidea&quot;</bucket>
+            </map>
+            <map to='#f8b11f'>
+              <bucket>&quot;Lagomorpha&quot;</bucket>
+            </map>
+            <map to='#f9608b'>
+              <bucket>&quot;Pholidota&quot;</bucket>
+            </map>
+            <map to='#fe7caa'>
+              <bucket>&quot;Pilosa&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:MSW05_Species:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;ascanius&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;batesi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;bezoarticus&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;cebifrons&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;crispus&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;cynosuros&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;fulvus&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;gallarum&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;gelada&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;grimmia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;japonicus&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;kuhlii&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;lervia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;maura&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;niger&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;patas&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;rufina&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;schistaceus&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;taurinus&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;unicolor&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;verus&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;acutorostrata&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;adersi&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;aethiopicus&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;alaotrensis&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;albirostris&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;alleni&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;australis&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;callipygus&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;chrysogaster&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;eurycerus&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;fascicularis&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;kandti&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;milneedwardsii&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;nigripes&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;pygmaeus&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;radiata&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;reevesi&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;spekei&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;tephrosceles&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;albogularis&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;arabica&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;babyrussa&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;catta&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;caucasica&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;demidoff&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;duvaucelii&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;forsteri&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;frontata&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;gongshanensis&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;jayakari&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;kob&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;leonina&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;musculus&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;nasomaculatus&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;ogouensis&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;paniscus&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;redunca&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;rufomitratus&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;sumatraensis&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;tonkeana&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;edeni&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;gorilla&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;auratus&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;bonasus&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;calamianensis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;dammah&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;djamdjamensis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;gutturosa&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;hamadryas&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;lichtensteinii&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;monteiri&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;mulatta&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;nana&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;occidentalis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;ogilbyi&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;philippensis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;pileatus&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;sauveli&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;siberu&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;thomsonii&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;townsendi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;assamensis&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;beisa&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;bisulcus&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;celebensis&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;cuvieri&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;delacouri&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;garnettii&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;germaini&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;griseus&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;jemlahicus&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;jubatus&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;leucogaster&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;marianna&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;melalophos&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;nigrifrons&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;pennantii&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;rupicapra&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;sclateri&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;taurus&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;vetulus&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;virginianus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;angolensis&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;antisensis&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;aries&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;barbatus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;caudatus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;cinereiceps&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;cristatus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;elegantulus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;fuscata&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;galapagoensis&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;gnou&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;gouazoubira&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;korrigum&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;leucophaeus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;natalensis&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;opdenboschi&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;rubidus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;sabaeus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;superstes&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;temama&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;torquatus&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ajax&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;caama&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;campbelli&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;davidianus&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;equinus&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;erythrogaster&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;hypoleucos&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;imberbis&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;melampus&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;nigra&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;priam&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;przewalskii&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;putaoensis&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;soemmerringii&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;talapoin&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;variegata&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;zanzibaricus&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;zebra&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;africanus&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;albifrons&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;alces&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;americanus&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;californianus&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;cameronensis&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;campestris&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;chrysomelas&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;falconeri&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;femoralis&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;kirkii&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;mindorensis&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;nigroviridis&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;pyrenaica&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;roloway&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;rooseveltorum&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;spekii&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;thibetana&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;aethiops&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;bieti&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;buselaphus&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;crinifrons&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;dorsalis&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;ebenus&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;hector&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;hylocrius&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;megaceros&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;nemestrina&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;physalus&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;piacentinii&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;potenziani&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;puda&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;rondoensis&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;sanfordi&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;sibirica&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;sphinx&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;togeanensis&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;troglodytes&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;walleri&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;anubis&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;arundinum&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;atherodes&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;bolabatuensis&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;cervicapra&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;collaris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;cyclopis&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;gabonensis&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;galeritus&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;gazella&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;goral&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;hemionus&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;leche&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;lhoesti&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;nayaur&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;pagensis&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;rufifrons&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;sanjei&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;swinhoei&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;timorensis&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;avunculus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;borealis&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;depressicornis&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;doggetti&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;elaphus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;hamlyni&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;hircus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;lunatus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;natunae&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;nippon&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;nyasae&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;oreotragus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;pogonias&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;porcus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;rubra&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;schaeferi&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;silenus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;tragocamelus&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;tropicalis&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;badius&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;brookei&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;cephalophus&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;derbianus&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;dryas&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;hatinhensis&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;hodgsonii&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;marsupialis&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;neglectus&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;orinus&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;oryx&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;pandora&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;poliocephalus&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;rubriventer&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;salvanius&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;scriptus&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;sinica&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;ursinus&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;vardonii&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;agilis&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;brelichi&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;buxtoni&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;eldii&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ellipsiprymnus&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;entellus&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;hosei&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;ibex&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;megalotis&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;nictitans&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;picticaudata&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;preussi&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;puhoatensis&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;senegalensis&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;silvicultor&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;simus&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;sylvanus&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;verrucosus&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;weynsi&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;albigena&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;caffer&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;cephus&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;dichotomus&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;erlangeri&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;erythrotis&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;javanicus&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;johnii&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;melanotis&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;nigrescens&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;pygargus&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;pygerythrus&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;schomburgki&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;spadix&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;tantalus&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;aterrimus&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;bennettii&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;beringei&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;bororo&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;dalli&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;denti&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;gordonorum&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;grunniens&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;macaco&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;matschiei&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;meinertzhageni&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;mephistophiles&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;mitis&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;moschatus&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;nivicola&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;petaurista&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;philippii&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;saltiana&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;shortridgei&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;taxicolor&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;vuquangensis&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;wolfi&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;novaeangliae&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;sapiens&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;arctoides&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;axis&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;baileyi&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;bucculentus&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;clarkei&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;coronatus&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;cynocephalus&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;geei&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;granti&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;hookeri&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;inermis&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;leptoceros&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;lowei&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;nghetinhensis&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;papio&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;rufilatus&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;satanas&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;tatarica&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;truongsonensis&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;vellerosus&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;abelii&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ahoenobarbus&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;albocollaris&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;alfredi&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ammon&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;bonaerensis&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;canadensis&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;cinerea&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;concolor&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;crassicaudatus&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;foai&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;frontalis&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;jentinki&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;laotum&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;obscurus&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;quadricornis&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;roxellana&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;strepsiceros&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;tarandus&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;tholloni&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;barbei&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;bubalis&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;chunyi&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;dorcas&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;dussumieri&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;hecki&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;hunteri&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;maxwellii&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;nemaeus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;ourebi&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;pallidus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;polykomos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;porcinus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;rufus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;scrofa&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;sharpei&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;solatus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;walie&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;wollebaeki&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;atys&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;bison&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;bricenii&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;dama&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;diana&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;guentheri&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;guereza&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;leucoryx&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;moholi&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;mona&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;mongoz&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;muntjak&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;nubiana&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;oliveri&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;phayrei&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;pusillus&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;saudiya&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;siamensis&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;thar&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;americana&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;angasii&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;aureus&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;capreolus&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;comata&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;feae&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;flavescens&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;francoisi&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;fulvorufula&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;larvatus&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;monticola&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;ochreata&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;quarlesi&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;rubicunda&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;subgutturosa&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;thomasi&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter1' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Maximum Longevity' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Maximum Longevity by Genus' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Maximum Longevity'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Maximum Longevity</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pantheria' name='federated.147by101q5og5q13p8imr0oa9pr7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.147by101q5og5q13p8imr0oa9pr7'>
+            <column caption='MaxLongevity' datatype='real' name='[17-1_MaxLongevity_m]' role='measure' type='quantitative' />
+            <column caption='Family' datatype='string' name='[MSW05_Family]' role='dimension' type='nominal' />
+            <column caption='Order' datatype='string' name='[MSW05_Order]' role='dimension' type='nominal' />
+            <column-instance column='[MSW05_Family]' derivation='None' name='[none:MSW05_Family:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MSW05_Order]' derivation='None' name='[none:MSW05_Order:nk]' pivot='key' type='nominal' />
+            <column-instance column='[17-1_MaxLongevity_m]' derivation='Sum' name='[sum:17-1_MaxLongevity_m:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.147by101q5og5q13p8imr0oa9pr7].[sum:17-1_MaxLongevity_m:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='stroke-color' id='refline1' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.147by101q5og5q13p8imr0oa9pr7].[sum:17-1_MaxLongevity_m:qk]' />
+              <color column='[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Order:nk]' />
+              <text column='[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Family:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Maximum Longevity by Genus'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pantheria' name='federated.147by101q5og5q13p8imr0oa9pr7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.147by101q5og5q13p8imr0oa9pr7'>
+            <column caption='MaxLongevity' datatype='real' name='[17-1_MaxLongevity_m]' role='measure' type='quantitative' />
+            <column caption='Family' datatype='string' name='[MSW05_Family]' role='dimension' type='nominal' />
+            <column caption='Genus' datatype='string' name='[MSW05_Genus]' role='dimension' type='nominal' />
+            <column caption='Order' datatype='string' name='[MSW05_Order]' role='dimension' type='nominal' />
+            <column caption='Species' datatype='string' name='[MSW05_Species]' role='dimension' type='nominal' />
+            <column-instance column='[MSW05_Genus]' derivation='None' name='[none:MSW05_Genus:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MSW05_Species]' derivation='None' name='[none:MSW05_Species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[17-1_MaxLongevity_m]' derivation='Sum' name='[sum:17-1_MaxLongevity_m:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.147by101q5og5q13p8imr0oa9pr7].[Action (Family,Order)]'>
+            <groupfilter function='crossjoin' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[MSW05_Family]' />
+              <groupfilter function='level-members' level='[MSW05_Order]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.147by101q5og5q13p8imr0oa9pr7].[Action (Family,Order)]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Genus:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Species:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.147by101q5og5q13p8imr0oa9pr7].[sum:17-1_MaxLongevity_m:qk]</rows>
+        <cols>[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Genus:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Maximum Longevity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Order:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Binomial:nk]</field>
+            <field>[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Order:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Maximum Longevity by Genus'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Species:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Family:nk]</field>
+            <field>[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Genus:nk]</field>
+            <field>[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Order:nk]</field>
+            <field>[federated.147by101q5og5q13p8imr0oa9pr7].[none:MSW05_Species:nk]</field>
+            <field>[federated.147by101q5og5q13p8imr0oa9pr7].[sum:17-1_MaxLongevity_m:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Maximum Longevity' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Maximum Longevity by Genus' width='192'>
+      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
+      fvtPEv8fc/GDmGWIOlIAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

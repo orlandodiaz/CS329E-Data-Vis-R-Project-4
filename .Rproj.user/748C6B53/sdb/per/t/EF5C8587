@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#ui.R\n\nrequire(shiny)\nrequire(shinydashboard)\n\ndashboardPage(\n  dashboardHeader(\n  ),\n  dashboardSidebar(\n    sidebarMenu(\n      menuItem(\"Action Example\", tabName = \"action\", icon = icon(\"dashboard\"))\n    )\n  ),\n  dashboardBody(\n    tabItems(\n      # First tab content\n      tabItem(tabName = \"action\",\n              plotOutput(\"plot1\",\n              click = \"plot_click\",\n              dblclick = \"plot_dblclick\",\n              hover = \"plot_hover\",\n              brush = \"plot_brush\"\n      ),\n      plotOutput(\"plot2\")\n      )\n    )\n  )\n)\n\n",
+    "created" : 1490544775159.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1954324072",
+    "id" : "EF5C8587",
+    "lastKnownWriteTime" : 1490306138,
+    "last_content_update" : 1490306138,
+    "path" : "~/DV_Project4/02 Shiny/ui.R",
+    "project_path" : "02 Shiny/ui.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
