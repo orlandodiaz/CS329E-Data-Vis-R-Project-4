@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "require(\"tidyr\")\nrequire(\"dplyr\")\nrequire(\"ggplot2\")\nrequire(\"jsonlite\")\nrequire(\"RCurl\")\nrequire(\"grid\")\n\n# call in data from data.world\ndf <- data.frame(fromJSON(getURL(URLencode(gsub(\"\\n\", \" \",'oraclerest.cs.utexas.edu:5000/rest/native/?query=\"select * from pantheria\"')),httpheader=c(DB='jdbc:data:world:sql:jlee:s-17-edv-project-3', USER='jlee', PASS=redacted , MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE) ))\n\ndf <- read.csv(\"https://query.data.world/s/12gav2q7y7l3ustgkagav5rkp\",header=T);\n\n# display summary, head, and subset of the dataframe\nprint(summary(df))\nprint(head(df))\nprint(subset(df))\n",
+    "created" : 1490382930392.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2516505776",
+    "id" : "C9FAB955",
+    "lastKnownWriteTime" : 1490309450,
+    "last_content_update" : 1490309450,
+    "path" : "~/DV_Project4/01 Data/Access data.world dv2.R",
+    "project_path" : "01 Data/Access data.world dv2.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
