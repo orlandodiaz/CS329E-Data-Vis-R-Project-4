@@ -1,7 +1,7 @@
 require(readr)
 
 # Download the pantheria file into a folder ../../CSVs and rename the file PreETL_Pantheria.csv
-file_path = "PreETL_pantheria.csv"
+file_path = "../../CSVs/PreETL_pantheria.csv"
 pantheria <- readr::read_csv(file_path)
 names(pantheria)
 

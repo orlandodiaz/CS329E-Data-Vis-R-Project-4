@@ -9,7 +9,7 @@ output:
 ---
 
 #**Introduction**
-This is our R Notebook, showing the steps we took to complete Project3 for CS 329E. This notebook includes step-by-step instructions on how to reproduce our project. To obtain our data, we used esapubs.org, an online ecological archive containing data sets on analyses of life history, ecological, and geographic trait differences among species. In this project, we analyze the information on traits to look at patterns among orders and species. 
+This is our R Notebook, showing the steps we took to complete Project4 for CS 329E. This notebook includes step-by-step instructions on how to reproduce our project. To obtain our data, we used esapubs.org, an online ecological archive containing data sets on analyses of life history, ecological, and geographic trait differences among species. In this project, we analyze the information on traits to look at patterns among orders and species. 
 
 #**R Configuration**
 Below we display our sessionInfo().
@@ -24,6 +24,10 @@ All data were obtained through esapubs.org. The dataset, Pantheria, contains 100
 #**Cleaning Data**
 Here's our ETL file to clean our data set.
 
+```{r}
+source("../01 Data/R_ETL.pantheria.R")
+```
+
 #**Cleaned up Data Download**
 Cleaned data can be downloaded from Data.world as a .csv file.
 
@@ -33,6 +37,10 @@ Dataset Name: Pantheria.csv
 
 Download Link: https://query.data.world/s/8ii6i7ylg3z01ki7f2tx4f81k
 
+```{r}
+source("../01 Data/Accessdataworld4.R")
+```
+
 #**Tableau / Tableau Action Generated Visualizations**
 **Descriptions:** Refer to visualization captions for individual descriptions.
 
@@ -41,7 +49,7 @@ Download Link: https://query.data.world/s/8ii6i7ylg3z01ki7f2tx4f81k
 ![](../03 Visualizations/Adult-body-mass.png)</center>
 
 #**Shiny Visualization and Published Application**
-**Description:** A static .png of the Shiny application, as well as a link to the live published version.
+**Description:** A static .png of the Shiny application, as well as a link to the live published version. Looks at sexual maturity age with respect to max longevity for the orders.
 
 Published Link: https://frannyfang.shinyapps.io/shinyactions1/
 
