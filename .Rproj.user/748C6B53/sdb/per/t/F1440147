@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "require(dplyr)\nrequire(ggplot2)\nrequire(tidyr)\nrequire(ggplot2)\nrequire(jsonlite)\nrequire(RCurl)\nrequire(grid)\n\n# call in data from data.world\ndf <- data.frame(fromJSON(getURL(URLencode(gsub(\"\\n\", \" \",'oraclerest.cs.utexas.edu:5000/rest/native/?query=\"select * from pantheria\"')),httpheader=c(DB='jdbc:data:world:sql:ehjkim:s-17-dv-project-4', USER='ehjkim', PASS=redacted , MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE) ))\n\n# df <- read.csv(\"https://query.data.world/s/dqctnno3ugvf2y4grf7v0ftj9\",header=T);\n\nserver <- function(input, output) {\n  output$plot1 <- renderPlot({\n    ggplot(df) + geom_point(aes(x=X17.1_MaxLongevity_m, y=X23.1_SexualMaturityAge_d, color=MSW05_Order, size=4)) + guides(size=FALSE) # guides is the legend, cuz size will become a legend, so you wanna turn it off\n  })\n  \n  output$plot2 <- renderPlot({\n    brush = brushOpts(id=\"plot_brush\", delayType = \"throttle\", delay = 30)\n    bdf=brushedPoints(df, input$plot_brush)\n    # View(bdf)\n    if( !is.null(input$plot_brush) ) {\n      df %>% dplyr::filter(X17.1_MaxLongevity_m %in% bdf[, \"X17.1_MaxLongevity_m\"]) %>% ggplot() + geom_point(aes(x=X17.1_MaxLongevity_m, y=X23.1_SexualMaturityAge_d, color=MSW05_Order, size=4)) + guides(size=FALSE)\n    } \n  })\n}",
+    "contents" : "require(dplyr)\nrequire(ggplot2)\nrequire(tidyr)\nrequire(ggplot2)\nrequire(jsonlite)\nrequire(RCurl)\nrequire(grid)\n\n# call in data from data.world\ndf <- data.frame(fromJSON(getURL(URLencode(gsub(\"\\n\", \" \",'oraclerest.cs.utexas.edu:5060/rest/native/?query=\"select * from Pantheria\"')),httpheader=c(DB='jdbc:data:world:sql:ehjkim:s-17-dv-project-4', USER='franny', PASS=redacted , MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE) ))\n\n\nserver <- function(input, output) {\n  output$plot1 <- renderPlot({\n    ggplot(df) + geom_point(aes(x=v_22, y=v_27, color=v_0, size=4)) + guides(size=FALSE) + labs(x=\"Max Longevity (months)\", y=\"Sexual Maturity Age (days)\") + scale_color_discrete (guide=guide_legend(title = \"Order\"))\n  })\n  \n  output$plot2 <- renderPlot({\n    brush = brushOpts(id=\"plot_brush\", delayType = \"throttle\", delay = 30)\n    bdf=brushedPoints(df, input$plot_brush)\n    # View(bdf)\n    if( !is.null(input$plot_brush) ) {\n      df %>% dplyr::filter(v_22 %in% bdf[, \"v_22\"]) %>% ggplot() + geom_point(aes(x=v_22, y=v_27, color=v_0, size=4)) + guides(size=FALSE) + labs(x=\"Max Longevity (months)\", y=\"Sexual Maturity Age (days)\") + scale_color_discrete (guide=guide_legend(title = \"Order\"))\n    } \n  })\n}",
     "created" : 1490382940526.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "760011558",
+    "hash" : "1788635606",
     "id" : "F1440147",
-    "lastKnownWriteTime" : 1490545135,
-    "last_content_update" : 1490545135630,
+    "lastKnownWriteTime" : 1490624753,
+    "last_content_update" : 1490624753042,
     "path" : "~/DV_Project4/02 Shiny/server.R",
     "project_path" : "02 Shiny/server.R",
     "properties" : {
