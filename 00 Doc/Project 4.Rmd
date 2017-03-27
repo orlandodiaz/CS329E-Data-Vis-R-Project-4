@@ -29,7 +29,7 @@ source("../01 Data/R_ETL.pantheria.R")
 ```
 
 #**Cleaned up Data Download**
-Cleaned data can be downloaded from Data.world as a .csv file.
+Cleaned data can be downloaded from Data.world as a .csv file. Because the dataset is so large, we filtered to only show some rows.
 
 Hosting User: ehjkim</br>
 Database: S17 DV Project 4</br>
